@@ -1,0 +1,28 @@
+<div class="card">
+  	<div class="card-header bg-success text-center">
+    <h4>Editing register for <%= @register.nombre %> user</h4>
+    </div>
+<div class="card-body">
+
+<%= simple_form_for @register do |f| %>
+
+  <%= f.input :nombre, placeholder: 'Name*' ,label: 'Name*' %>
+
+  <%= f.input :apellido, placeholder: 'Lastaname*' ,label: 'Lastname*' %>
+
+  <%= f.input :numero, placeholder: 'Phone*' ,label: 'Phone number*' %>
+
+  <%= f.button :submit %>
+
+<% end %>
+
+<br>
+<a class="btn btn-success " href="/registers">Go back!</a>
+
+<%= link_to 'Show', @register,:class => "btn btn-info" %>
+<br><br>
+</div>
+  <div class="card-footer text-muted bg-success text-center">
+    This it's edit panel
+  </div>
+</div>

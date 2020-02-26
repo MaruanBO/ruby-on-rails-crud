@@ -1,0 +1,35 @@
+<div class="card ">
+  	<div class="card-header bg-success text-center">
+    <h4>Show client <%= @register.nombre %></h4>
+    </div>
+<div class="card-body">
+	<table class="table table-striped">
+	    <thead>
+		    <tr>
+		    	<th scope="col">Name</th>
+		    	<th scope="col">Lastname</th>
+		    	<th scope="col">Phone</th>
+		    	<th scope="col">Edit</th>
+		    	<th scope="col">Back</th>
+		    </tr>
+	    </thead>
+	  
+	    <tbody>
+		    <tr>
+		    	<td><%= @register.nombre %></td>
+		    	<td><%= @register.apellido %></td>
+		    	<td><%= @register.numero %></td>
+		        <td><%= link_to 'Edit', edit_register_path(@register) ,:class => "btn btn-warning"%></td>
+		    	<td><%= link_to 'Go back!', registers_path ,:class => "btn btn-success"%></td>
+		    </tr>
+		</tbody>
+	</table>
+
+	<p id="notice" class="text-success"><%= notice %></p>
+	<br>
+</div>
+
+  <div class="card-footer text-muted bg-success text-center">
+    This it's show clients panel
+  </div>
+</div>

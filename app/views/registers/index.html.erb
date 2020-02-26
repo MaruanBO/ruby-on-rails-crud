@@ -1,0 +1,52 @@
+<div class="card">
+  <div class="card-header bg-success text-center">
+    <h4>Admin panel</h4>
+    </div>
+    <br>
+  <div class="card-body">
+    <%= form_tag(registers_path, :method => "get", id: "search-form") do %>
+      <div class="input-group">
+        <span class="input-group-btn">
+        <%= submit_tag "Buscar", :name => nil ,class:"btn btn-success "%>
+        </span>
+        <%= text_field_tag :search, params[:search], placeholder: "Search with name" , class:"form-control"%><br>
+        <% end %>
+      </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>Number</th>
+        <th>Show</th>
+        <th>Edit</th>
+        <th>Destroy</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @registers.each do |register| %>
+        <tr>
+          <td><%= register.nombre %></td>
+          <td><%= register.apellido %></td>
+          <td><%= register.numero %></td>
+          <td><%= link_to 'Show', register,:class => "btn btn-info"%></td>
+          <td><%= link_to 'Edit', edit_register_path(register),:class => "btn btn-warning" %></td>
+          <td><%= link_to 'Destroy', register, method: :delete, data: { confirm: 'Are you sure want delete this field?' },:class => "btn btn-danger"  %></td>
+      <%end%>
+        </tr>
+    </tbody>
+  </table>
+
+<p id="notice" class="text-success"><%= notice %></p>
+
+<br>
+
+<a class="btn btn-success" href="/registers/new">New register</a>
+<br><br>
+</div>
+  <div class="card-footer text-muted bg-success text-center">
+    This it's admin panel
+  </div>
+</div>
