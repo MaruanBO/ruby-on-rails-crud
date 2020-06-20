@@ -1,4 +1,4 @@
-# Ruby on rails crud
+# About
 
 This is ruby on rails crud aplication with validator and bootstrap 4 style, u can change, edit, remove and update any data in this system based in postgreSQL
 
