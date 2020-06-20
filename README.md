@@ -1,24 +1,22 @@
-# README
+# Ruby on rails crud
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is ruby on rails crud aplication with validator and bootstrap 4 style, u can change, edit, remove and update any data in this system based in postgreSQL
 
-Things you may want to cover:
+# Screenshot
 
-* Ruby version
+![alt text](https://i.ibb.co/nkwgft2/Captura-de-pantalla-de-2020-06-20-18-36-43.png "Admin-Panel")
 
-* System dependencies
+# Demo
 
-* Configuration
+https://ruby-crud.herokuapp.com/registers
 
-* Database creation
+## Contact me
 
-* Database initialization
+If u wanna learning or contribuit with me to learning or anything u want please contact me
+* maruanbueno55@gmail.com
 
-* How to run the test suite
+## License
 
-* Services (job queues, cache servers, search engines, etc.)
+The Switch-Home code is available at GitHub under the Open-Source MIT license.
 
-* Deployment instructions
-
-* ...
+> Developed by Maruan Boukhriss with Love my english it's so bad sorry. 
